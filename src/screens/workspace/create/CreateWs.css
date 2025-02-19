@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.create-container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.new-workspace {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.title-new {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.confirm-btn {
+    background-color: #008060;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.confirm-btn:hover {
+    background-color: #00684a;
+}
+
+.cancel-btn {
+    background-color: #d9534f;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cancel-btn:hover {
+    background-color: #c9302c;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 750px) {
+    .new-workspace {
+        padding: 30px;
+    }
+
+    .title-new {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .new-workspace {
+        padding: 20px;
+    }
+
+    .title-new {
+        font-size: 16px;
+    }
+
+    .confirm-btn, .cancel-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .new-workspace {
+        padding: 15px;
+    }
+
+    .title-new {
+        font-size: 14px;
+    }
+
+    .confirm-btn, .cancel-btn {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .new-workspace {
+        max-width: 700px;
+        padding: 50px;
+    }
+
+    .title-new {
+        font-size: 22px;
+    }
+}
